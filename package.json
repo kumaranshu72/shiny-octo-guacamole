@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node index.js",
+    "start": "nodemon --exec babel-node src/index.js",
     "lint": "./node_modules/eslint/bin/eslint.js */**.js",
-    "build": "babel lib -d dist/server.js",
+    "build": "babel lib -d dist/index.js",
     "serve": "node dist/index.js"
   },
   "repository": {
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/kumaranshu72/shiny-octo-guacamole#readme",
   "dependencies": {
+    "ejs": "^2.6.1",
     "express": "^4.16.4"
   },
   "devDependencies": {

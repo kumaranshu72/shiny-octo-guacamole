@@ -1,8 +1,9 @@
 import { Router } from 'express'
+import { register } from '../controllers'
 
 const router = Router()
 
 router.route('/register')
-  .get((req, res) => res.send('hi'))
+  .get(register)
 
 export default router

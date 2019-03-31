@@ -1,7 +1,8 @@
-// eslint-disable-next-line arrow-parens
-export const Router = (router) => {
-  router.route('/register')
-    .get((req, res) => {
-      res.send('Hello world')
-    })
-}
+import { Router } from 'express'
+
+const router = Router()
+
+router.route('/register')
+  .get((req, res) => res.send('hi'))
+
+export default router

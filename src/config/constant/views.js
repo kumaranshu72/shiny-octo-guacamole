@@ -1,3 +1,3 @@
 export const viewNames = {
-  REGISTER: 'REGISTER',
+  REGISTER: 'pages/register',
 }

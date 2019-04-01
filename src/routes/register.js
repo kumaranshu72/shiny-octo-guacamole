@@ -6,6 +6,7 @@ import { routeNames } from '../config'
 const router = Router()
 
 router.route(routeNames.REGISTER)
-  .get(register)
+  .get(register.viewForm)
+  .post(register.registerUser)
 
 export default router

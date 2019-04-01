@@ -2,8 +2,40 @@
     <head>
         <% include ../partials/head %>
     </head>
+    <style>
+        .centre {
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
     <body>
         <% include ../partials/header %>
+
+        <div class = 'centre' >
+            <h5>Registration</h5>
+            <form method = 'post' action ='register'>
+                <label>First Name : </label>
+                <input type = "text" name = "fname">
+
+                <label>Last Name : </label>
+                <input type = "text" name = "lname">
+            </br>
+                <label>Email : </label>
+                <input type = "text" name = "email">
+
+                <label>Mobile No : </label>
+                <input type = "number" name = "mobile">
+            <br>
+                <label>Password : </label>
+                <input type = "password" name = "password">
+
+                <label>ConfirmPassword : </label>
+                <input type = "password" name = "co-password">
+            </br>
+                <input type = "submit" value = "register">
+            </form>
+        </div>
+
         <% include ../partials/footer %>
     </body>
 </html>

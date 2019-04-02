@@ -1,5 +1,5 @@
-module.exports = (sequelize, type) => {
-  return sequelize.define('user', {
+export const UserModel = (sequelize, type) => (
+  sequelize.define('user', {
     id: {
       type: type.INTEGER,
       primaryKey: true,
@@ -11,4 +11,4 @@ module.exports = (sequelize, type) => {
     password_hash: type.STRING,
     is_active: type.BOOLEAN,
   })
-}
+)

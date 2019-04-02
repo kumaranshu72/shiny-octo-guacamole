@@ -2,6 +2,7 @@ import express from 'express'
 
 import path from 'path'
 import * as bodyParser from 'body-parser'
+import { User } from './db/sequilize'
 
 import router from './routes'
 

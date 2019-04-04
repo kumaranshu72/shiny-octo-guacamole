@@ -1,4 +1,4 @@
-import { UserModel } from '../model'
+import { UserModel, verifyModel } from '../model'
 
 const Sequelize = require('sequelize')
 
@@ -14,6 +14,7 @@ const sequelize = new Sequelize('register', 'root', 'root', {
 })
 
 export const User = UserModel(sequelize, Sequelize)
+export const Verify = verifyModel(sequelize, Sequelize)
 
 sequelize.sync({ force: true })
   .then(() => {

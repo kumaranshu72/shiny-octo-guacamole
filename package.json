@@ -22,9 +22,12 @@
   },
   "homepage": "https://github.com/kumaranshu72/shiny-octo-guacamole#readme",
   "dependencies": {
+    "bcrypt": "^3.0.5",
     "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "express-session": "^1.15.6",
     "lodash": "^4.17.11",
     "mysql2": "^1.6.5",
     "sequelize": "^5.2.9"
